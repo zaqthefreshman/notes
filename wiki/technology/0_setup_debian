@@ -1,0 +1,14 @@
+Setup Debian
+--
+
+1. Setup your user
+```
+su
+
+```
+
+Install remaining programs
+```
+sudo apt-get install keychain xsel xfonts-terminus spacefm-gtk3
+```
+
