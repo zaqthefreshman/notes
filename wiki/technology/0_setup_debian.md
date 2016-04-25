@@ -77,6 +77,11 @@ I install debian with only the basic tools installed
 	vim +PluginInstall +qall
 	vim +GoInstallBinaries +qall
 	```
+11. Optional Install [nvim](https://github.com/neovim/neovim/wiki/Building-Neovim)
+	```
+    	ln -s ~/.vim ~/.config/nvim
+    	ln -s ~/.vimrc ~/.config/nvim/init.vim
+	```
 
 11. Build YCM, make sure to remove completer you didn't install the runtimes for
 	```
