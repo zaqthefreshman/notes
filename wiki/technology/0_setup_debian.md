@@ -81,6 +81,7 @@ I install debian with only the basic tools installed
 	```
     	ln -s ~/.vim ~/.config/nvim
     	ln -s ~/.vimrc ~/.config/nvim/init.vim
+    	sudo pip install neovim // Required for python plugs (YCM) to work
 	```
 
 11. Build YCM, make sure to remove completer you didn't install the runtimes for
