@@ -7,6 +7,7 @@ I install debian with only the basic tools installed
 	su
 	adduser zaq --shell /bin/bash/
 	adduser zaq sudo
+	apt-get install sudo
 	exit
 	```
 
