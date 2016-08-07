@@ -13,6 +13,9 @@ I install debian with only the basic tools installed
 
 2. Install nessasary programs, now would be a good time to bring in any existing ssh keys or generate them. If you're planning on using the [dotfiles](https://github.com/zaqthefreshman/dotfiles)
 	```
+	sudo apt-get install netselect-apt
+	netselect-apt -s -n <distro/ eg. jessie >
+	sudo mv sources.list /etc/apt/sources.list
 	sudo apt-get install xserver-xorg-core i3 git chromium rxvt-unicode-256color vim-nox curl
 	```
 
