@@ -1,5 +1,6 @@
 When I started awk I always wanted something like the below to just show me the power and usage of the tool. Awk is a lot more powerful than the below articulates, but this much will carry you a long ways
 
+This can be copy and pasted into a terminal
 ```
 printf 'i am 0\ni am 1\ni am 2\ni am 3\ni am 4\ni am 5\ni am 6\ni am 7\ni am 8\ni am 9' | 
 
