@@ -17,7 +17,8 @@ Personal Cloud Infrastructure and Product
 	- Currently I have a 2TB 4Core box I'm using for media and application storage. I wanna separate the application storage.
 	- Need considerably more space for media 2TB filled in a day; 8TB seems like a good place to start. System would need to be expandable
 * Application
-	- Since none of my services are terribly intense a small cluster of DigitalOcean hosts come to mind. There service has gotten considerably closer to ec2 in what you can do. Its also half the price and easier to use. That said cluster management would still be pretty manually as they don't have anything like ECS yet.
+	- ECS / NGINX / CONSUL
+	- RDS
 
 ### Services / APIs
 * Authentication
@@ -29,15 +30,20 @@ Personal Cloud Infrastructure and Product
 	* Text me balance
 
 ### Integration / 3rd Party
-* Contract bring 3rd party data into and out of the system
+* Bring 3rd party data into and out of the system
 	- For push systems a simple proxy could do (think bb_proxy -> current)
 	- For pull systems periodic tasks orchestrated by some kind of scheduler
-		- iron.io
-		- lambda
+		- job system (iron.io, lambda, ec)
+		- cron / cronos
 * System for running said integrations
 
 ### Monitoring
-* healthchecking and alerting
+* Tools
+	* Dataloop
+		- Prometheus (services)
+		- statsd or influxdb (tasks)
+	* Pingdom
+	* twilio
 * host metrics
 	- cpu_user
 	- bytes in/out
@@ -46,5 +52,8 @@ Personal Cloud Infrastructure and Product
 * service metrics
 	- 50/90/99 Response Latency
 	* Request count
+	* 400s
+	* 500s
 * application metrics
+	* db reads/writes
 
