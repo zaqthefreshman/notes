@@ -16,7 +16,7 @@ I install debian with only the basic tools installed
 	sudo apt-get install netselect-apt
 	netselect-apt -s -n <distro/ eg. jessie >
 	sudo mv sources.list /etc/apt/sources.list
-	sudo apt-get install xserver-xorg-core i3 git stterm neovim curl
+	sudo apt-get install xserver-xorg-core i3 git git-hub stterm neovim curl
 	```
 
 3. Make Directories
