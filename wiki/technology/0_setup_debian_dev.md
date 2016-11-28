@@ -16,7 +16,7 @@ I install debian with only the basic tools installed
 	sudo apt-get install netselect-apt
 	netselect-apt -s -n <distro/ eg. jessie >
 	sudo mv sources.list /etc/apt/sources.list
-	sudo apt-get install xserver-xorg-core i3 git chromium rxvt-unicode-256color vim-nox curl
+	sudo apt-get install xserver-xorg-core i3 git stterm neovim curl
 	```
 
 3. Make Directories
@@ -64,7 +64,7 @@ I install debian with only the basic tools installed
 
 8. Install remaining programs
 	```
-	sudo apt-get install keychain xsel xfonts-terminus spacefm-gtk3 scrot gksu graphviz keynav python-pip mercurial
+	sudo apt-get install keychain xclip fonts-noto-mono spacefm-gtk3 scrot graphviz keynav python-pip mercurial
 	```
 
 9. Install python packages
