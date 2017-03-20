@@ -42,3 +42,8 @@ I install debian with only the basic tools installed. I do not use GRUB and inst
 	```
 	FC_DEBUG=1 <program> // Will print font matching information
 	```
+
+1. Force git to always use ssh for github
+	```
+	git config --global url."git@github.com:".insteadOf "https://github.com/"
+	```
