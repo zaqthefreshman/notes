@@ -1,3 +1,0 @@
-# notes
-
-Populated with notehub
