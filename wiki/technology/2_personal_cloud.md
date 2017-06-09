@@ -14,15 +14,17 @@ Personal Cloud Infrastructure and Product
 ## Notes
 ### Storage
 * Media
-	- Currently I have a 2TB 4Core box I'm using for media and application storage. I wanna separate the application storage.
-	- Need considerably more space for media 2TB filled in a day; 8TB seems like a good place to start. System would need to be expandable
+	- 48T 29T raid6 Powervault md1200
 * Application
-	- ECS / NGINX / CONSUL
-	- RDS
+	- Backup to the above 
+	- ECS / ALB / CONSUL
+		- experimenting: swarm, kubernetes
+	- RDS (aurora)
 
 ### Services / APIs
 * Authentication
 	* Key if the technology is ever going to work for more users
+	* Should just bite the bullet and build what I need or use Auth0
 * Location (whereis.zaquesion.io)
 	- Display my current location
 	- Generate temp links to expose location
@@ -33,15 +35,18 @@ Personal Cloud Infrastructure and Product
 * Bring 3rd party data into and out of the system
 	- For push systems a simple proxy could do (think bb_proxy -> current)
 	- For pull systems periodic tasks orchestrated by some kind of scheduler
-		- job system (iron.io, lambda, ec)
-		- cron / cronos
+		- lambda, ECS runTask()
+			- http://codevoyagers.com/2016/06/22/cooperative-scaling-on-aws-ecs/
+			- https://github.com/tmaiaroto/aegis
+		- cloudwatch cron
 * System for running said integrations
 
 ### Monitoring
 * Tools
-	* Dataloop
+	* Managed: Prometheus / Grafana
+	* Hosted: Datadog
 		- Prometheus (services)
-		- statsd or influxdb (tasks)
+		- statsd (tasks)
 	* Pingdom
 	* twilio
 * host metrics
@@ -56,4 +61,3 @@ Personal Cloud Infrastructure and Product
 	* 500s
 * application metrics
 	* db reads/writes
-
