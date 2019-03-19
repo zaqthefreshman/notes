@@ -10,16 +10,12 @@ I install debian with only the basic tools installed. I do not use GRUB and inst
 	apt-get install sudo
 	exit
 	```
-1. During last installation 2016-12-29 connman was not in debian testing (stretch). Get it from unstable (jessie's is borked with testing dbus). Probably fine if you are from the future
-	pre-defined configs go here
+1. Use [NetworkManager](https://wiki.debian.org/NetworkManager) to manage your network wireless, wired, vpn, etc connections
+	useful commands
 	```
-	/var/lib/connman/
-	```
-	useful commands (run as root)
-	```
-	conmannctl
-	rfkill // list and unblock wifi
-	ifconfig // -a list interfaces, up <iface> to bring it up (if blocked check rfkill)
+	nmcli device wifi list
+	nmcli conn
+	nmcli radio wifi on
 	```
 
 1. Install nessasary programs, now would be a good time to bring in any existing ssh keys or generate them. If you're planning on using the [dotfiles](https://github.com/zaqthefreshman/dotfiles)
